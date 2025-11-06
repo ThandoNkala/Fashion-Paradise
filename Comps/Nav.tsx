@@ -1,12 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { useCart } from "./cart/CartProvider";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const cartCount = 0;
+  const { totals } = useCart();
+  const cartCount = totals.itemCount;
 
   return (
     <header className="w-full border-b border-black/10 bg-background">

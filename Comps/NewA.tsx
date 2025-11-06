@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { useCart } from "./cart/CartProvider";
 
 type Item = {
   id: string;
@@ -22,7 +24,7 @@ const items: Item[] = [
   {
     id: "2",
     name: "Women's Linen Dress",
-    price: "$74.00",
+    price: "$74.00", 
     image:
       "https://res.cloudinary.com/dp5gnnji3/image/upload/v1761643143/1-300x349_iyzqyx.png",
     colors: ["#DC2626", "#10B981", "#F59E0B"],
@@ -40,6 +42,7 @@ const items: Item[] = [
 ];
 
 const NewA = () => {
+  const { addItem } = useCart();
   return (
     <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="mb-6 flex items-center justify-between gap-4">
@@ -94,8 +97,21 @@ const NewA = () => {
                 </div>
               </div>
               <div className="mt-4 flex items-center gap-3">
-                <button className="inline-flex flex-1 items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:bg-black/90">
-                  Add to Cart
+                <button
+                  className="inline-flex flex-1 items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:bg-black/90"
+                  onClick={() =>
+                    addItem({
+                      id: it.id,
+                      name: it.name,
+                      image: it.image,
+                      price: parseFloat(it.price.replace(/[^0-9.]/g, "")) || 0,
+                      color: it.colors?.[0],
+                      size: it.sizes?.[0],
+                      qty: 1,
+                    })
+                  }
+                >
+                     Add to Cart
                 </button>
                 <Link
                   href={`/product/${it.id}`}
