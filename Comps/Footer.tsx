@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-10 border-b border-gray-200 text-center md:text-left items-start">
           <div className="flex flex-col items-center md:items-start">
             <Image
-              src=" "
+              src="https://res.cloudinary.com/dp5gnnji3/image/upload/v1761640252/ChatGPT_Image_Oct_28__2025__10_25_02_AM-removebg-preview_advfyo.png"
               alt="logo"
               width={160}
               height={50}
@@ -16,20 +16,20 @@ const Footer = () => {
             />
             <div className="flex items-center space-x-4 mt-4 justify-center md:justify-start">
               <a
-                href="#"
-                aria-label="Instagram"
+                href="https://res.cloudinary.com/dp5gnnji3/image/upload/v1762419302/facebook-svgrepo-com_3_kaj8vb.svg"
+                aria-label="Facebook"
                 className="text-gray-500 hover:text-indigo-600"
               >
                 <Image
-                  src="# "
+                  src="https://res.cloudinary.com/dp5gnnji3/image/upload/v1762419305/instagram-svgrepo-com_gdjkql.svg"
                   alt="Instagram"
                   width={24}
                   height={24}
                 />
               </a> 
               <a
-                href="#"
-                aria-label="Twitter"
+                href="https://res.cloudinary.com/dp5gnnji3/image/upload/v1762419300/whatsapp-svgrepo-com_e3hdsp.svg"
+                aria-label="whatsapp"
                 className="text-gray-500 hover:text-indigo-600"
               >
                 <Image
