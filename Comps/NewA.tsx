@@ -14,7 +14,7 @@ type Item = {
 const items: Item[] = [
   {
     id: "1",
-    name: "Men's Classic Jacket",
+    name: "Men's Polo Shirt",
     price: "$89.00",
     image:
       "https://res.cloudinary.com/dp5gnnji3/image/upload/v1761643136/polo-tshirt-400x465_hnzplh.jpg",
@@ -23,7 +23,7 @@ const items: Item[] = [
   },
   {
     id: "2",
-    name: "Women's Linen Dress",
+    name: "Women's Classic Jacket",
     price: "$74.00", 
     image:
       "https://res.cloudinary.com/dp5gnnji3/image/upload/v1761643143/1-300x349_iyzqyx.png",
@@ -32,7 +32,7 @@ const items: Item[] = [
   },
   {
     id: "3",
-    name: "Kids' Everyday Hoodie",
+    name: "Kids' t-shirt",
     price: "$39.00",
     image:
       "https://res.cloudinary.com/dp5gnnji3/image/upload/v1761638798/category-03_zyx4qi.jpg",
