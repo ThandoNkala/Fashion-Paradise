@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <Image
               src=" "
-              alt="Tech News logo"
+              alt="logo"
               width={160}
               height={50}
               className="mb-3"
