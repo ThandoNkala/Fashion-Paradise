@@ -76,7 +76,7 @@ export default function Nav() {
             <Link href="/shop" className="hidden rounded-md px-3 py-2 text-sm hover:bg-black/5 lg:inline-block">Shop</Link>
             <Link href="/deals" className="hidden rounded-md px-3 py-2 text-sm hover:bg-black/5 lg:inline-block">Deals</Link>
             <Link href="/about" className="hidden rounded-md px-3 py-2 text-sm hover:bg-black/5 lg:inline-block">About</Link>
-            <Link href="/account" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-black/5">
+            <Link href="/login" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-black/5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
                 <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.75 20.1a8.25 8.25 0 1 1 16.5 0 .9.9 0 0 1-.9.9H4.65a.9.9 0 0 1-.9-.9Z" clipRule="evenodd" />
               </svg>
